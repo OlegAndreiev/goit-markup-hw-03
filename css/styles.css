@@ -18,15 +18,39 @@
   --card-border-color: rgba(238, 238, 238, 1);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 
   font-family: var(--primary-font-family);
-  /* Убрать? */
-  /* letter-spacing: 0.03em; */
-  /* font-size: 14px; */
-  /* line-height: 1.71; */
+
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -50,6 +74,16 @@ body {
 /* Для всех списков */
 .list {
   list-style: none;
+  padding: 0;
+}
+
+.container {
+  outline: 1px solid tomato;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -----------------Главная-----------------*/
@@ -69,6 +103,10 @@ body {
   letter-spacing: 0.06em;
   border-style: none;
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 .button:hover,
@@ -149,6 +187,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
 /* Section */
@@ -271,7 +311,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.card {
+.team-list .card {
   background-color: var(--primary-bg-color);
   border-style: solid;
   border-color: var(--card-border-color);
