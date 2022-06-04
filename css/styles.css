@@ -75,6 +75,14 @@ h6 {
 .list {
   list-style: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Для всех параграфов */
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .container {
@@ -107,6 +115,8 @@ h6 {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover,
@@ -188,6 +198,8 @@ h6 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -200,6 +212,8 @@ h6 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
 /* Features */
@@ -211,12 +225,23 @@ h6 {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 
 .features-list .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.section-features {
+  padding-top: 94px;
+}
+
+/* Work */
+.section-work {
+  padding-top: 94px;
 }
 
 /* Team  */
@@ -235,8 +260,30 @@ h6 {
   letter-spacing: 0.03em;
 }
 
+.team-list .card {
+  background-color: var(--primary-bg-color);
+  border-style: solid;
+  border-color: var(--card-border-color);
+  border-width: 1px;
+}
+
 .team-bgc {
   background-color: var(--section-bg-color);
+}
+
+.card-item {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team .section-title {
+  padding-top: 94px;
+  /* margin-bottom: 50px; */
 }
 
 /* Footer  */
@@ -309,11 +356,4 @@ h6 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.team-list .card {
-  background-color: var(--primary-bg-color);
-  border-style: solid;
-  border-color: var(--card-border-color);
-  border-width: 1px;
 }
