@@ -24,20 +24,20 @@
     <!-- Шапка -->
 
     <header class="header-bgc">
-      <div class="container">
+      <div class="container main-header">
         <a href="./index.html" class="logo-header link"><span class="pre-logo">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -55,25 +55,25 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Особенности</h2>
           <ul class="features-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -86,8 +86,8 @@
       <section class="section-work section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="work-list list">
+            <li class="item">
               <img
                 src="./images/hands_tablet_big.jpg"
                 alt="Человек занимающийся версткой сайта"
@@ -95,7 +95,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/hands_phone.jpg"
                 alt="Человек занимающийся разработкой мобильного приложения"
@@ -103,7 +103,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/hands_tablet_small.jpg"
                 alt="Человек занимающийся дизайнерской работой"
@@ -138,8 +138,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Ольга Репина</h3>
-              <p lang="en" class="text">Frontend Developer</p>
+              <div class="card-item">
+                <h3 class="title">Ольга Репина</h3>
+                <p lang="en" class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -148,8 +150,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Николай Тарасов</h3>
-              <p lang="en" class="text">Marketing</p>
+              <div class="card-item">
+                <h3 class="title">Николай Тарасов</h3>
+                <p lang="en" class="text">Marketing</p>
+              </div>
             </li>
             <li class="card">
               <img
@@ -158,8 +162,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p lang="en" class="text">UI Designer</p>
+              <div class="card-item">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p lang="en" class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -167,17 +173,21 @@
     </main>
     <!-- Подвал -->
     <footer class="footer-bgc">
-      <div class="container">
-        <a href="./index.html" class="logo-footer link"><span class="pre-logo">Web</span>Studio</a>
+      <div class="container main-footer">
+        <div class="logo-footer-full">
+          <a href="./index.html" class="logo-footer link"
+            ><span class="pre-logo">Web</span>Studio</a
+          >
+        </div>
         <address>
           <ul class="address-list list">
-            <li>
+            <li class="item">
               <a href="" class="work-address link">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
-            <li>
+            <li class="item">
               <a href="mailto:info@example.com" class="contacts link">info@example.com</a>
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380991111111" class="contacts link">+38 099 111 11 11</a>
             </li>
           </ul>
