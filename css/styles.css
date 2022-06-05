@@ -212,6 +212,12 @@ h6 {
 }
 
 /* Hero */
+
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   background-color: rgba(47, 48, 58, 1);
 }
@@ -229,6 +235,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  max-width: 696px;
 }
 
 /* Section */
@@ -282,6 +290,7 @@ h6 {
 /* Work */
 .section-work {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -315,9 +324,6 @@ h6 {
 
 .team-list .card {
   background-color: var(--primary-bg-color);
-  /* border-style: solid;
-  border-color: var(--card-border-color);
-  border-width: 1px; */
 }
 
 .team-list .card:not(:last-child) {
@@ -348,24 +354,18 @@ h6 {
   padding-bottom: 94px;
 }
 
-.section-team .section-title {
-  padding-top: 94px;
-}
-
 /* Footer  */
-
-.main-footer {
-  height: 252px;
-  padding-top: 60px;
-}
 
 .footer-bgc {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer-full {
   margin-bottom: 20px;
 }
+
 .address-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -437,11 +437,15 @@ h6 {
 .button-filter:focus {
   color: var(--button-text-color);
   background-color: var(--button-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .current-button {
   color: var(--button-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Список проектов */
